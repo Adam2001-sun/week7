@@ -8,8 +8,9 @@
 #include "Individual.h"
 
 class Mutator {
+
 public:
-    Mutator();
+    
     virtual Individual * mutate(Individual * individual, int k) = 0;
 
 };
