@@ -2,17 +2,15 @@
 // Created by Sun Haoxian on 2/5/22.
 //
 
-//
-// Created by Sun Haoxian on 24/4/22.
-//
 
-//
-// Created by Sun Haoxian on 4/4/22.
-//
 
 
 #include "Individual.h"
 #include "Mutator.h"
+#include "BitFlip.h"
+#include "BitFlipProb.h"
+#include "Rearrange.h"
+#include <iostream>
 
 
 using namespace std;
