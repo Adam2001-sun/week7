@@ -5,6 +5,7 @@
 #include "BitFlipProb.h"
 
  BitFlipProb::BitFlipProb() = default;
+ 
 Individual *BitFlipProb::mutate(Individual * individual, int k) {
     //reference from https://stackoverflow.com/questions/39288595/why-not-just-use-random-device
     std::random_device rd;
