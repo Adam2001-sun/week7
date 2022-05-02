@@ -20,7 +20,7 @@ int main(){
 
 
 Mutator * bitFlip = new BitFlip();
-Mutator * rearrange = new Rearrange;
+Mutator * rearrange = new Rearrange();
 
 
 string binarystring1 = " ";

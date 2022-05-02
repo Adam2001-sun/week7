@@ -8,10 +8,8 @@
 #include "Individual.h"
 using namespace std;
 class Mutator {
-
 public:
 
-    
 virtual Individual * mutate(Individual * individual, int k) = 0;
 
 };
