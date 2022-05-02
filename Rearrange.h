@@ -6,7 +6,7 @@
 #define CMAKE_CLION_CONAN_TEMPLATE_REARRANGE_H
 
 #include "Mutator.h"
-
+using namespace std;
 class Rearrange :public Mutator {
     
 public:

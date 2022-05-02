@@ -6,7 +6,7 @@
 #define CMAKE_CLION_CONAN_TEMPLATE_MUTATOR_H
 
 #include "Individual.h"
-
+using namespace std;
 class Mutator {
 
 public:

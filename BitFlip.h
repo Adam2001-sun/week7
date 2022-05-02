@@ -6,7 +6,7 @@
 #define CMAKE_CLION_CONAN_TEMPLATE_BITFLIP_H
 
 #include "Mutator.h"
-
+using namespace std;
 
 class BitFlip :public Mutator {
 
