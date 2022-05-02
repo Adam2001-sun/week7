@@ -4,4 +4,6 @@
 
 #include "Mutator.h"
 
+Mutator::Mutator() = default;
 
+Mutator::~Mutator() = default;

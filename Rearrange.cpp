@@ -4,6 +4,8 @@
 
 #include "Rearrange.h"
 
+Rearrange::Rearrange() = default;
+
 Individual *Rearrange::mutate(Individual * individual, int k) {
     if(k<=0){
         return individual;
