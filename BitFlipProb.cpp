@@ -4,7 +4,11 @@
 
 #include "BitFlipProb.h"
 
- BitFlipProb::BitFlipProb() = default;
+ BitFlipProb::BitFlipProb(double p){
+
+     
+
+ }
 
 Individual BitFlipProb::mutate(Individual individual, int k) {
 
@@ -24,6 +28,7 @@ Individual BitFlipProb::mutate(Individual individual, int k) {
     }
 
     individual.setBinaryString(new_str);
+
     return individual;
 }
 

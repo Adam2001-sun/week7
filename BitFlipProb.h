@@ -11,10 +11,11 @@
 class BitFlipProb: public Mutator{
 
 public:
-    BitFlipProb();
+    BitFlipProb(double p);
     Individual mutate(Individual individual, int k) override;
 
 private:
+double prob;
 int randnum;
 
 };
