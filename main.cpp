@@ -22,6 +22,7 @@ int main(){
 Mutator * bitFlip = new BitFlip();
 Mutator * rearrange = new Rearrange;
 
+
 string binarystring1 = " ";
 string binarystring2 = " ";
 
@@ -35,6 +36,7 @@ Individual * Individual1 = new Individual(binarystring1);
 Individual * Individual2 = new Individual(binarystring2);
 
 cout<<execute(Individual1,bitFlip,k1)->getString()<< " ";
+
 Individual * outcome = execute(Individual2,rearrange,k2);
 
 cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
