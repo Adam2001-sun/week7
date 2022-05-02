@@ -30,6 +30,7 @@ void Individual:: flipBit(int pos){
 }
 
 int Individual:: getMaxOnes() {
+    
     int counter = 0, result = 0;
     for (int i = 0; i < (int) this->binaryString.length(); ++i) {
         if (binaryString[i] == '1') {

@@ -21,8 +21,6 @@ Individual * execute(Individual * indPtr, Mutator * mPtr, int k){
  Individual *indiviual = new Individual(newIndi);
 
  return indiviual;
- 
-
 
 }
 

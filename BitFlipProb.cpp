@@ -9,11 +9,11 @@
 Individual BitFlipProb::mutate(Individual individual, int k) {
 
 
-int randnum = rand()%2;
+    int randnum = rand()%2;
 
-    std::string tmp_string = individual.getString();
+    std::string new_str = individual.getString();
     
-    for (std::string::iterator it = tmp_string.begin(); it != tmp_string.end(); ++it) {
+    for (std::string::iterator it = new_str.begin(); it != new_str.end(); ++it) {
 
         double current_num = randnum;
 
@@ -23,7 +23,7 @@ int randnum = rand()%2;
 
     }
 
-    individual.setBinaryString(tmp_string);
+    individual.setBinaryString(new_str);
     return individual;
 }
 
