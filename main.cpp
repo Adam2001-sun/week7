@@ -52,9 +52,6 @@ Individual * outcome = execute(Individual2,rearrange,k2);
 cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
 
 
-int a = 20 % 7;
-cout << a << endl;
-
 // //bitFlip test
 // auto bitFlip = make_shared<BitFlip>();
 // auto individual = make_shared<Individual>(8);
