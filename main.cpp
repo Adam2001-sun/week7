@@ -18,21 +18,26 @@ Individual * execute(Individual * indPtr, Mutator * mPtr, int k){
 
 int main(){
 
-shared_ptr<Mutator> bitflip = make_shared<BitFlip>();
-auto binarystr1 = make_shared<Individual>(6);
-Individual *outcome1 = execute(binarystr1.get(),bitflip.get(),2);
+
+Mutator * bitFlip = new BitFlip();
+Mutator * rearrange = new Rearrange;
+
+string binarystring1 = " ";
+string binarystring2 = " ";
 
 
-shared_ptr<Mutator> rearrange = make_shared<Rearrange>();
-auto binarystr2 = make_shared<Individual>("0111");
-Individual *outcome2 = execute(binarystr2.get(),rearrange.get(),2);
-cout << outcome1->getString() << ' '<< outcome2->getString()<< ' '<< outcome2->getMaxOnes() << endl;
+int k1 = 0;
+int k2 = 0; 
 
+cin >> binarystring1 >> k1 >> binarystring2 >> k2;
 
+Individual * Individual1 = new Individual(binarystring1);
+Individual * Individual2 = new Individual(binarystring2);
 
+cout<<execute(Individual1,bitFlip,k1)->getString()<< " ";
+Individual * outcome = execute(Individual2,rearrange,k2);
 
-
-
+cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
 
 
 
