@@ -13,7 +13,17 @@
 using namespace std;
 
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k){
-  return mPtr->mutate(indPtr,k);
+
+  Individual Newstring(*indPtr);
+
+  Individual newIndi = mPtr->mutate(Newstring,k);
+
+ Individual *indiviual = new Individual(newIndi);
+
+ return indiviual;
+ 
+
+
 }
 
 int main(){
@@ -42,6 +52,8 @@ Individual * outcome = execute(Individual2,rearrange,k2);
 cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
 
 
+int a = 20 % 7;
+cout << a << endl;
 
 // //bitFlip test
 // auto bitFlip = make_shared<BitFlip>();
@@ -61,6 +73,5 @@ cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
 // auto individual4 = make_shared<Individual>("abcde");
 // Individual *outcome = rearrange->mutate(individual4.get(),3);
 // cout << outcome->getString() << endl;
-
 
 }

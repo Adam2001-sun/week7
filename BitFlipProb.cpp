@@ -6,12 +6,12 @@
 
  BitFlipProb::BitFlipProb() = default;
 
-Individual *BitFlipProb::mutate(Individual * individual, int k) {
+Individual BitFlipProb::mutate(Individual individual, int k) {
 
 
 int randnum = rand()%2;
 
-    std::string tmp_string = individual->getString();
+    std::string tmp_string = individual.getString();
     
     for (std::string::iterator it = tmp_string.begin(); it != tmp_string.end(); ++it) {
 
@@ -23,7 +23,7 @@ int randnum = rand()%2;
 
     }
 
-    individual->setBinaryString(tmp_string);
+    individual.setBinaryString(tmp_string);
     return individual;
 }
 

@@ -4,18 +4,19 @@
 
 #include "Rearrange.h"
 
+
 Rearrange::Rearrange() = default;
 
-Individual *Rearrange::mutate(Individual * individual, int k) {
+Individual Rearrange::mutate(Individual individual, int k) {
     if(k<=0){
         return individual;
     }
-    std::string tmp_s = individual->getString();
+    std::string tmp_s = individual.getString();
 
     std::string empty_string;
 
     int index = (int)tmp_s.size() - ((k-1) % (int)tmp_s.size());
-
+ 
     int front = (int) tmp_s.size()-index;
 
     empty_string = tmp_s.substr(front,index);
@@ -25,7 +26,7 @@ Individual *Rearrange::mutate(Individual * individual, int k) {
 
     }
 
-    individual->setBinaryString(empty_string);
+    individual.setBinaryString(empty_string);
 
     return individual;
 

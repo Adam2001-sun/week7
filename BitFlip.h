@@ -12,7 +12,7 @@ class BitFlip :public Mutator {
 
 public:
     BitFlip();
-  Individual * mutate(Individual *individual, int k) override;
+  Individual mutate(Individual individual, int k) override;
 
 };
 
