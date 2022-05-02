@@ -50,23 +50,4 @@ Individual * outcome = execute(Individual2,rearrange,k2);
 cout << outcome->getString() << " "<<outcome->getMaxOnes() <<endl;
 
 
-// //bitFlip test
-// auto bitFlip = make_shared<BitFlip>();
-// auto individual = make_shared<Individual>(8);
-// Individual *out = bitFlip->mutate(individual.get(),10);
-// cout << out->getString() << endl;
-
-// //prob test
-
-// auto bitFlipProb = make_shared<BitFlipProb>();
-// auto individual3 = make_shared<Individual>(8);
-// Individual *out2 = bitFlipProb->mutate(individual3.get(),8);
-// cout << out2->getString() << endl;
-
-// //rearrange test
-// auto rearrange = make_shared<Rearrange>();
-// auto individual4 = make_shared<Individual>("abcde");
-// Individual *outcome = rearrange->mutate(individual4.get(),3);
-// cout << outcome->getString() << endl;
-
 }

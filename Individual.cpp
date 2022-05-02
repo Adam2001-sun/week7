@@ -19,9 +19,7 @@ int Individual::getBit(int pos){
 void Individual::flipBit(int pos){
     pos--;
     char &c = binaryString[pos];
-
 //c = c == '0' ? '1' : '0';
-
     if(c == '0'){
         c ='1';
     }else{
