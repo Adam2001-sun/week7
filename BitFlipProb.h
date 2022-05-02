@@ -7,7 +7,7 @@
 
 #include "Mutator.h"
 #include <random>
-using namespace std;
+
 class BitFlipProb: public Mutator{
 
 public:

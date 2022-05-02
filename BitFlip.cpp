@@ -11,6 +11,7 @@ Individual BitFlip::mutate(Individual individual, int k) {
     if (k<=0){
         return individual;
     }
+    
     std:: string temp_s = individual.getString();
 
     int index = ( k - 1) % (int)temp_s.size();
